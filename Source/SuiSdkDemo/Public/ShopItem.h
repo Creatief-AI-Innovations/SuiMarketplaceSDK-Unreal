@@ -66,6 +66,15 @@ class SUISDKDEMO_API UShopItem : public UObject
 		UTexture2D* itemBG;
 
 	UPROPERTY(BlueprintReadWrite, Category = "SuiMarketDemo ShopItem")
+		FString listingId;
+
+	UPROPERTY(BlueprintReadWrite, Category = "SuiMarketDemo ShopItem")
+		int32 listingPrice;
+
+	UPROPERTY(BlueprintReadWrite, Category = "SuiMarketDemo ShopItem")
+		bool listed = false;
+
+	UPROPERTY(BlueprintReadWrite, Category = "SuiMarketDemo ShopItem")
 		UTexture2DDynamic* loadedImage;
 
 
